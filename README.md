@@ -2,7 +2,7 @@
 
 ## Project setup
 ```
-npm install
+npm install && cd server && npm install
 ```
 
 ### Compiles and hot-reloads for development
