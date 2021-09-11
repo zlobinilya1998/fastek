@@ -5,9 +5,14 @@
 npm install && cd server && npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for client
 ```
 npm run serve
+```
+
+### Compiles and hot-reloads for server
+```
+npm run start
 ```
 
 ### Compiles and minifies for production
