@@ -102,7 +102,7 @@
           @click.prevent="downloadFile(file.name)"
           >{{ file.name }}{{ index === multipleFiles.length - 1 ? "" : ";" }}
         </a>
-        <icon
+        <i
           class="ri-close-line hover:text-red-500 cursor-pointer transition"
           @click="deleteLinkFromMultipleFiles(index)"
         />

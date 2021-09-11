@@ -6,7 +6,10 @@ const fs = require("fs");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "./public/images/");
+    if (!fs.existsSync("public/images")) {
+      fs.mkdirSync("public/images", { recursive: true });
+    }
+    cb(null, `${__dirname}/public/images/`);
   },
 });
 const uploads = multer({ storage });
